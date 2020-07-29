@@ -1,14 +1,12 @@
-# my résumé 
+# my résumé
 
 ## Building
-you'll need `xelatex` to build this.
+Install `xelatex` to build.
 
 ```console
 $ xelatex resume.tex
 ```
 
-## Troubleshooting
-Ubuntu (and it's derivatives) tend to complain about a missing `ucharcat.sty`. Just ignore it and hit `Ctrl+C`.
 
 
 
