@@ -1,189 +1,231 @@
-\documentclass[]{resume-openfont}
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
 
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-\namesection{Vishesh}{Agrawal}{ \urlstyle{same}\href{https://awalvie.me}{awalvie.me} |
-\href{mailto:agrawal.vishesh.178@gmail.com}{agrawal.vishesh.178@gmail.com}
-}
+\begin{center}
+    \textbf{\Huge \scshape Vishesh Agrawal} \\ \vspace{1pt}
+    \small \href{mailto:agrawal.vishesh.178@gmail.com}{\underline{agrawal.vishesh.178@gmail.com}} $|$
+    \href{https://github.com/awalvie}{\underline{github.com/awalvie}} $|$
+    \href{https://awalvie.me/}{\underline{awalvie.me}}
+\end{center}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%-----------EDUCATION-----------
 \section{Education}
-
-\subsection{Nirma University}
-\descript{B.Tech in Information Technology}
-\location{2017–2021 | Ahmedabad, IN}
-\location{Grade | 7.2}
-\sectionsep
-
-\subsection{St Anthony's School}
-\descript{High School}
-\location{Grad. May 2016 | Udaipur, IN}
-\sectionsep
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nirma University}{Ahmedabad, India}
+      {Bachelor of Technology in Information Technology}{Jul. 2017 -- May 2021}
+    \resumeSubheading
+      {St. Anthony's Sr. Sec. School}{Udaipur, Rajasthan, India}
+      {High School}{Graduated 2016}
+  \resumeSubHeadingListEnd
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\vspace{4mm} % Hacky fix for awkward extra vertical space
-
-\section{Links}
-GitHub/\href{https://github.com/awalvie}{\bf awalvie} \\
-LinkedIn/\href{https://www.linkedin.com/in/vishesh-agrawal}{\bf vishesh-agrawal} \\
-
-\vspace{2mm} % Hacky fix for awkward extra vertical space
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     INTERESTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Interests}
-\location{System Architecture}
-\location{Free/Libre Software}
-\location{DevOps}
-\location{Unix}
-\sectionsep
-
-\section{Hobbies}
-\location{Philosophy}
-\location{Literature}
-\location{Linguistics}
-\location{Self-Reliance}
-\sectionsep
-
-\vspace{-2mm} % Hacky fix for awkward extra vertical space
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\subsection{Comfortable with}
-Python \textbullet{} C
-\sectionsep
-\subsection{Techonologies}
-Django \textbullet{} Flask \\
-Ansible \textbullet{} Prometheus \\
-AWS EC2 \textbullet{}
-\sectionsep
-\subsection{Familar Tech}
-Make \textbullet{} CMake \textbullet{} Redis\\
-Websockts \textbullet{} WebRTC \textbullet{} PSQL\\
-Docker\\
-\sectionsep
-\subsection{Familiar Languages}
-Rust \textbullet{} JavaScript\textbullet{} HTML/CSS \\
-C++ \textbullet{} Bash \textbullet{} Golang
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.66\textwidth}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%-----------EXPERIENCE-----------
 \section{Experience}
+  \resumeSubHeadingListStart
 
-\runsubsection{Major League Hacking}
-\descript{Student Fellow}
-\location{Remote}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Contributed to Kiwi TCMS to increase code coverage in Django
-\item Currently adding integration for Apache Kafka in BentoML
-\end{tightemize}
-\sectionsep
+    \resumeSubheading
+      {Major League Hacking}{October 2020 -- December 2020}
+      {Open Source Fellow}{Remote}
+      \resumeItemListStart
+        \resumeItem{Contributed to Kiwi TCMS to increase code coverage in Django.}
+		\resumeItem{Participated in and won the Halfway Hackthon, with our project \href{https://github.com/zerefwayne/mlh-township}{mlh-township} in the "Best Community Project" category}
+      \resumeItemListEnd
 
-\runsubsection{Makera}
-\descript{Backend Developer}
-\location{May 2020 – October 2020 | Remote}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Provision API routes with a backend written in Flask.
-\item Created tables and their internal relations. Wrote queries for communication between frontend and backend servers in PostgreSQL.
-\item Deployed production server for both the frontend and backend with NGINX.
-\end{tightemize}
-\sectionsep
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Makers}{May. 2020-- Oct. 2020}
+      {Backend Developer}{Remote}
+      \resumeItemListStart
+        \resumeItem{Provision API routes with a backend written in Flask.}
+        \resumeItem{Created tables and their internal relations. Wrote queries for communication between frontend and backend servers in PostgreSQL.}
+        \resumeItem{Deployed production server for both the frontend and backend with NGINX.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Inventum Pvt. Ltd.}{May. 2019 -- June. 2019}
+      {Engineering Intern}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{Built, compiled and configured an LFS (Linux From Scratch) distribution.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 
-\runsubsection{Inventum Pvt. Ltd}
-\descript{Engineering Intern}
-\location{May 2019 – June 2019 | Noida, IN}
-\begin{tightemize}
-\item Built, compiled and configured an LFS (Linux From Scratch) distribution.
-\end{tightemize}
-\sectionsep
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+		  {\href{https://github.com/awalvie/anzibl}{\underline{\textbf{anzibl}}} $|$ \emph{Prometheus, Ansible, AWS EC2}}{December 2020}
+          \resumeItemListStart
+            \resumeItem{Use ansible to provision an EC2 instance.}
+            \resumeItem{Install requisite software}
+            \resumeItem{Deploy a webserver writter in Go}
+            \resumeItem{Monitor the webserver with Prometheus and send emails when an endpoint stops working or the server isn't responding.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+		  {\href{https://github.com/zerefwayne/mlh-township}{\underline{\textbf{mlh-township}}} $|$ \emph{NodeJS, WebSockets, WebRTC, PeerJS, React}}{November 2020}
+          \resumeItemListStart
+            \resumeItem{MLH Township harnesses the power of websockets and webRTC to provide the fellows a playgournd where they can comuunicate and hang out with each other in the game-like setting of MLH Town.}
+			\resumeItem{Winner in the "Best Community Project" category for the MLH Halfway Hackthon.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+		  {\href{https://github.com/MLH-Fellowship/CovidAid}{\underline{\textbf{CovidAid}}} $|$ \emph{Flask, NGINX, PostgreSQL, SqlAlchemy}}{October 2020}
+          \resumeItemListStart
+            \resumeItem{A Hackathon Project made during our first week at MLH. I was resposbile for provisioning the backend, written in Flask, writing the core APIs, documenting the APIs and deploying it using NGINX.}
+          \resumeItemListEnd
+	  \resumeProjectHeading
+		  {\href{https://github.com/awalvie/tengi}{\underline{\textbf{tengi}}} $|$ \emph{ANSI C}}{}
+		  \resumeItemListStart
+			\resumeItem{A minimal shell written in C. The goal with the project was to learn how a UNIX shell works and communicates with process and system calls.}
+		  \resumeItemListEnd
+	  \resumeProjectHeading
+		  {\href{https://github.com/awalvie/lyceum}{\underline{\textbf{lyceum}}} $|$ \emph{ANSI C}}{}
+		  \resumeItemListStart
+			\resumeItem{A Static Site Generator, written with the primary goal of being simple and protable. The project uses no external libraries and build natively on any platform. It renders Text files with metadata about the file on top into plain HTML.}
+		  \resumeItemListEnd
+	  \resumeProjectHeading
+		  {\href{https://github.com/awalvie/sersim}{\underline{\textbf{sersim}}} $|$ \emph{ANSI C}}{}
+		  \resumeItemListStart
+			\resumeItem{HTTP Server written in C to locally serve lyceum.}
+		  \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
-% \runsubsection{Crio.do}
-% \descript{Teaching Assistant}
-% \location{Jan 2020 – Oct 2020| Remote}
-% \begin{tightemize}
-% \item Assist students during Crio Workshops and Tryouts.
-% \item Bug test and give opinion on new features for workshops and modules.
-% \end{tightemize}
-% \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{PROJECTS}
-\runsubsection{\href{https://github.com/awalvie/anzibl}{anzibl}}
-\descript{EC2 Automation}
-\location{AWS EC2, Ansible, Prometheus}
-Ansible project for EC2 instance creation, provisioning relevant software, deploying a webserver and monitoring the webserver with prometheus.\\
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C} \\
+     \textbf{Technologies}{: Django, Flask, Ansible, Prometheus, AWS EC2} \\
+     \textbf{Developer Tools}{: Git, Docker, VIM, TMUX, Linux} \\
+     \textbf{Familiar Languages}{: Golang, Bash, C++} \\
+     \textbf{Familiar Technologies}{: Redis, WebSockets, WebRTC, OpenGL, SDL2} \\
+    }}
+ \end{itemize}
 
-\sectionsep
-\runsubsection{\href{https://github.com/zerefwayne/mlh-township}{MLH Township}}
-\descript{Web Application}
-\location{NodeJS, Websockts, WebRTC}
-MLH Township harnesses the power of websockets and webRTC to provide the fellows a playgournd where they can comuunicate and hang out with each other in the game-like setting of MLH Town.\\
 
-\sectionsep
-\runsubsection{\href{https://github.com/MLH-Fellowship/CovidAid}{CovidAid}}
-\descript{Mobile Application}
-\location{Python}
-A Hackathon Project made during our first week at MLH. I was resposbile for provisioning the backend, written in Flask, writing the core APIs, documenting the APIs and deploying it using NGINX.\\
-
-\sectionsep
-\runsubsection{\href{https://github.com/awalvie/tengi}{tengi}}
-\descript{Shell}
-\location{ANSI C}
-A minimal shell written in C. The goal with the project was to learn how a UNIX shell works and communicates with process and system calls.\\
-\sectionsep
-
-\runsubsection{\href{https://github.com/awalvie/lyceum}{lyceum}}
-\descript{Static Site Generator}
-\location{ANSI C}
-A Static Site Generator, written with the primary goal of being simple and protable. The project uses no external libraries and build natively on any platform. It renders Text files with metadata about the file on top into plain HTML.\\
-\sectionsep
-
-\runsubsection{\href{https://github.com/awalvie/sersim}{sersim}}
-\descript{HTTP Server}
-\location{ANSI C}
-HTTP Server written in C to locally serve lyceum.
-\sectionsep
-
-\end{minipage}
-\end{document}  \documentclass[]{article}
+%-------------------------------------------
+\end{document}

@@ -1,10 +1,11 @@
 # my résumé
 
 ## Building
-Install `xelatex` to build.
+Install `texlive` to build.
 
 ```console
-$ xelatex resume.tex
+$ latexmk -pdf resume.tex
+$ latexmk -c
 ```
 
 
