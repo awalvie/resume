@@ -125,9 +125,6 @@
     \resumeSubheading
       {Nirma University}{Ahmedabad, India}
       {Bachelor of Technology in Information Technology}{Jul. 2017 -- May 2021}
-    \resumeSubheading
-      {St. Anthony's Sr. Sec. School}{Udaipur, Rajasthan, India}
-      {High School}{Graduated 2016}
   \resumeSubHeadingListEnd
 
 
@@ -136,11 +133,20 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {SendX.io}{January 2021 -- Present}
+      {Internship}{Remote}
+      \resumeItemListStart
+        \resumeItem{Setup monitoring for Sendpost.io from scratch using Prometheus, Grafana and various exporters.}
+        \resumeItem{Wrote wrapper to push necessary metrics from the backend to Prometheus in Golang.}
+        \resumeItem{Setup logging for Sendpost.io using Loki and Promtail.}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Major League Hacking}{October 2020 -- December 2020}
       {Open Source Fellow}{Remote}
       \resumeItemListStart
         \resumeItem{Contributed to Kiwi TCMS to increase code coverage in Django.}
-		\resumeItem{Participated in and won the Halfway Hackthon, with our project \href{https://github.com/zerefwayne/mlh-township}{mlh-township} in the "Best Community Project" category}
+		\resumeItem{Won the Halfway Hackthon, for project \href{https://github.com/zerefwayne/mlh-township}{"mlh-township"} in the "Best Community Project" category}
       \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -154,12 +160,12 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Makers}{May. 2020-- Oct. 2020}
+      {Makera}{May. 2020-- Oct. 2020}
       {Backend Developer}{Remote}
       \resumeItemListStart
-        \resumeItem{Provision API routes with a backend written in Flask.}
-        \resumeItem{Created tables and their internal relations. Wrote queries for communication between frontend and backend servers in PostgreSQL.}
-        \resumeItem{Deployed production server for both the frontend and backend with NGINX.}
+        \resumeItem{Provision REST API routes using Flask.}
+        \resumeItem{Used SQLAlchemy and Marshmallow to manage a PostgreSQL database.}
+        \resumeItem{Deployed and managed production server for both the frontend and backend with NGINX.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -175,14 +181,11 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-      \resumeProjectHeading
+	  \resumeProjectHeading
 		  {\href{https://github.com/awalvie/anzibl}{\underline{\textbf{anzibl}}} $|$ \emph{Prometheus, Ansible, AWS EC2}}{December 2020}
-          \resumeItemListStart
-            \resumeItem{Use ansible to provision an EC2 instance.}
-            \resumeItem{Install requisite software}
-            \resumeItem{Deploy a webserver writter in Go}
-            \resumeItem{Monitor the webserver with Prometheus and send emails when an endpoint stops working or the server isn't responding.}
-          \resumeItemListEnd
+		  \resumeItemListStart
+			\resumeItem{Ansible project to automate provisioning and EC2 instance, deploy a webserver, monitor it using Prometheus and trigger alerts with alertmanager.}
+		  \resumeItemListEnd
       \resumeProjectHeading
 		  {\href{https://github.com/zerefwayne/mlh-township}{\underline{\textbf{mlh-township}}} $|$ \emph{NodeJS, WebSockets, WebRTC, PeerJS, React}}{November 2020}
           \resumeItemListStart
@@ -218,10 +221,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C} \\
-     \textbf{Technologies}{: Django, Flask, Ansible, Prometheus, AWS EC2} \\
-     \textbf{Developer Tools}{: Git, Docker, VIM, TMUX, Linux} \\
-     \textbf{Familiar Languages}{: Golang, Bash, C++} \\
+     \textbf{Languages}{: Python, C, Golang} \\
+     \textbf{Technologies}{: Django, Flask, Ansible, Prometheus, AWS, Beego} \\
+     \textbf{Developer Tools}{: Git, Docker, AWS, TMUX, Linux} \\
+     \textbf{Familiar Languages}{: Bash, C++} \\
      \textbf{Familiar Technologies}{: Redis, WebSockets, WebRTC, OpenGL, SDL2} \\
     }}
  \end{itemize}
