@@ -134,9 +134,36 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {DeepSource}{June 2021 -- Present}
-      {Site Reliability Engineer}{Remote}
-	  \newline % bad solution I know
+      {DeepSource (YC W20)}{June 2021 -- Present}
+      {SRE II}{Bangalore}
+      \resumeItemListStart
+        \resumeItem{Managed all public cloud infrastructure as sole member of the SRE team for a quarter}
+        \resumeItem{Migrate continuous delivery from Spinnaker to ArgoCD for all internal services to achieve GitOps}
+        \resumeItem{Primary liason for DeepSource Enterprise Server installations and support in customer environments}
+        \resumeItem{Worked on Kubernetes cluster hardening for egress blocking using nsjail, linux capabilities and kyverno}
+        \resumeItem{Maintained and debugged CI/CD pipelines in JenkinsX, Tekton, Ceph, GCP Cloud Build and Spinnaker}
+		\resumeItem{Migrated DeepSource's primary PostgreSQL database live without downtime to a new machine}
+		\resumeItem{Helped DeepSource achieve SOC2 compliance}
+		\resumeItem{Migrated the production cluster to GCP's dataplane V2 with Velero without downtime}
+		\resumeItem{Maintained secrets management system with lease renewal and credential rotation patterns using Vault}
+		\resumeItem{Automated local development setup of DeepSource's primary backend with Ansible}
+		\resumeItem{Explored using Skaffold for replicating production cluster locally}
+		\resumeItem{Tailscale on Kubernetes as the primary internal VPN}
+		\resumeItem{deepsource.io $\rightarrow$ deepsource.com}
+		\resumeItem{Identified and upgraded all production kubernetes services to upgrade the production cluster to v1.22}
+		\resumeItem{Revamp internal Grafana dashboards to improve observability and alerting}
+		\resumeItem{Deployed 50+ services to production with Helm}
+		\resumeItem{Audited, systemized and automated processes for provisioning IAM requests to developers on GCP}
+		\resumeItem{Cloudfront for caching assets for DeepSource's static sites}
+		\resumeItem{Resolved container vulnerabilities reported by Vanta within SLAs}
+		\resumeItem{Mentored fellow SREs in coming up to speed with DeepSource’s infrastructure and the associated SRE projects}
+		\resumeItem{Improved DeepSource Enterprise Server (TODO: Write this better)}
+		\resumeItem{Integration Environment (TODO)}
+		\resumeItem{Documentation (TODO)}
+		\resumeItem{On-call (TODO)}
+		\resumeItem{Terminate internal TLS services with SSL (TODO)}
+		\resumeItem{Health Check Service (TODO)}
+      \resumeItemListEnd
 
     \resumeSubheading
       {SendX Inc.}{January 2021 -- June 2021}
@@ -227,9 +254,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C, Golang, C++, Bash} \\
-     \textbf{Technologies}{: Django, Flask, REST, Beego, AWS, PostgreSQL, Ansible, Prometheus, NGINX, Loki, Grafana} \\
-     \textbf{Tools}{: Git, Docker, Vim, Tmux, Linux} \\
+     \textbf{Languages}{: Python, C, Golang, Bash} \\
+     \textbf{Technologies}{: GCP, AWS, Vault, ArgoCD, Spinnaker, RabbitMQ, Redis, Velero, Replicated, Kyverno, JenkinsX, Cloudflare} \\
+     \textbf{Tools}{: Kubernetes, Docker, Helm, Tailscale} \\
     }}
  \end{itemize}
 
