@@ -120,15 +120,6 @@
 \end{center}
 
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Nirma University}{Ahmedabad, India}
-      {Bachelor of Technology in Information Technology}{Jul. 2017 -- May 2021}
-  \resumeSubHeadingListEnd
-
-
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -137,31 +128,24 @@
       {DeepSource (YC W20)}{June 2021 -- Present}
       {SRE II}{Bangalore}
       \resumeItemListStart
-        \resumeItem{Managed all public cloud infrastructure as sole member of the SRE team for a quarter}
-        \resumeItem{Migrate continuous delivery from Spinnaker to ArgoCD for all internal services to achieve GitOps}
+        \resumeItem{Migrate Spinnaker to ArgoCD for all internal services to achieve GitOps}
+        \resumeItem{Hardened Kubernetes cluster for network egress blocking using nsjail, linux capabilities and kyverno}
+        \resumeItem{Managed all infrastructure as sole member of the SRE team for a quarter}
         \resumeItem{Primary liason for DeepSource Enterprise Server installations and support in customer environments}
-        \resumeItem{Worked on Kubernetes cluster hardening for egress blocking using nsjail, linux capabilities and kyverno}
         \resumeItem{Maintained and debugged CI/CD pipelines in JenkinsX, Tekton, Ceph, GCP Cloud Build and Spinnaker}
-		\resumeItem{Migrated DeepSource's primary PostgreSQL database live without downtime to a new machine}
+		\resumeItem{Migrated primary production PostgreSQL database live without downtime}
 		\resumeItem{Helped DeepSource achieve SOC2 compliance}
-		\resumeItem{Migrated the production cluster to GCP's dataplane V2 with Velero without downtime}
+		\resumeItem{Migrated production cluster to GCP's Dataplane V2 with Velero live without downtime}
 		\resumeItem{Maintained secrets management system with lease renewal and credential rotation patterns using Vault}
 		\resumeItem{Automated local development setup of DeepSource's primary backend with Ansible}
-		\resumeItem{Explored using Skaffold for replicating production cluster locally}
 		\resumeItem{Tailscale on Kubernetes as the primary internal VPN}
 		\resumeItem{deepsource.io $\rightarrow$ deepsource.com}
 		\resumeItem{Identified and upgraded all production kubernetes services to upgrade the production cluster to v1.22}
-		\resumeItem{Revamp internal Grafana dashboards to improve observability and alerting}
-		\resumeItem{Deployed 50+ services to production with Helm}
-		\resumeItem{Audited, systemized and automated processes for provisioning IAM requests to developers on GCP}
-		\resumeItem{Cloudfront for caching assets for DeepSource's static sites}
+		\resumeItem{Audited, systemized and automated processes for provisioning GCP IAM requests}
+		\resumeItem{Cloudfront caching DeepSource's static site assests}
 		\resumeItem{Resolved container vulnerabilities reported by Vanta within SLAs}
-		\resumeItem{Mentored fellow SREs in coming up to speed with DeepSource’s infrastructure and the associated SRE projects}
 		\resumeItem{Improved DeepSource Enterprise Server (TODO: Write this better)}
 		\resumeItem{Integration Environment (TODO)}
-		\resumeItem{Documentation (TODO)}
-		\resumeItem{On-call (TODO)}
-		\resumeItem{Terminate internal TLS services with SSL (TODO)}
 		\resumeItem{Health Check Service (TODO)}
       \resumeItemListEnd
 
@@ -192,21 +176,21 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-    \resumeSubheading
-      {Makera}{May. 2020-- Oct. 2020}
-      {Backend Developer}{Remote}
-      \resumeItemListStart
-        \resumeItem{Provision REST API routes using Flask}
-        \resumeItem{Used SQLAlchemy and Marshmallow to manage a PostgreSQL database}
-        \resumeItem{Deployed and managed production server for both the frontend and backend with NGINX}
-    \resumeItemListEnd
+    % \resumeSubheading
+      % {Makera}{May. 2020-- Oct. 2020}
+      % {Backend Developer}{Remote}
+      % \resumeItemListStart
+        % \resumeItem{Provision REST API routes using Flask}
+        % \resumeItem{Used SQLAlchemy and Marshmallow to manage a PostgreSQL database}
+        % \resumeItem{Deployed and managed production server for both the frontend and backend with NGINX}
+    % \resumeItemListEnd
 
-    \resumeSubheading
-      {Inventum Pvt. Ltd.}{May. 2019 -- June. 2019}
-      {Engineering Intern}{Noida, India}
-      \resumeItemListStart
-        \resumeItem{Built, compiled and configured an LFS (Linux From Scratch) distribution}
-      \resumeItemListEnd
+    % \resumeSubheading
+      % {Inventum Pvt. Ltd.}{May. 2019 -- June. 2019}
+      % {Engineering Intern}{Noida, India}
+      % \resumeItemListStart
+        % \resumeItem{Built, compiled and configured an LFS (Linux From Scratch) distribution}
+      % \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -214,33 +198,38 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-	  \resumeProjectHeading
-		  {\href{https://github.com/awalvie/anzibl}{\underline{\textbf{anzibl}}} $|$ \emph{Prometheus, Ansible, AWS EC2}}{December 2020}
+	 	  \resumeProjectHeading
+		  {\href{https://github.com/awalvie/go-blender}{\underline{\textbf{go-blender}}} $|$ \emph{Golang}}{September 2020}
 		  \resumeItemListStart
-			\resumeItem{Ansible project to automate provisioning an EC2 instance, deploy a webserver, monitor it using Prometheus and trigger alerts with alertmanager}
+			\resumeItem{Static Site Generator for awalvie.me}
 		  \resumeItemListEnd
-      \resumeProjectHeading
-		  {\href{https://github.com/zerefwayne/mlh-township}{\underline{\textbf{mlh-township}}} $|$ \emph{NodeJS, WebSockets, WebRTC, PeerJS, React}}{November 2020}
-          \resumeItemListStart
-            \resumeItem{MLH Township harnesses the power of websockets and webRTC to provide the fellows a playgournd where they can comuunicate and hang out with each other in the game-like setting of MLH Town}
-			\resumeItem{Winner in the "Best Community Project" category for the MLH Halfway Hackthon}
-          \resumeItemListEnd
-      \resumeProjectHeading
-		  {\href{https://github.com/MLH-Fellowship/CovidAid}{\underline{\textbf{CovidAid}}} $|$ \emph{Flask, NGINX, PostgreSQL, SqlAlchemy}}{October 2020}
-          \resumeItemListStart
-            \resumeItem{A Hackathon Project made during our first week at MLH. I was resposbile for provisioning the backend, written in Flask, writing the core APIs, documenting the APIs and deploying it using NGINX}
-          \resumeItemListEnd
-	  \resumeProjectHeading
+		   % \resumeProjectHeading
+		  % {\href{https://github.com/awalvie/anzibl}{\underline{\textbf{anzibl}}} $|$ \emph{Prometheus, Ansible, AWS EC2}}{December 2020}
+		  % \resumeItemListStart
+			% \resumeItem{Ansible project to automate provisioning an EC2 instance, deploy a webserver, monitor it using Prometheus and trigger alerts with alertmanager}
+		  % \resumeItemListEnd
+      % \resumeProjectHeading
+		  % {\href{https://github.com/zerefwayne/mlh-township}{\underline{\textbf{mlh-township}}} $|$ \emph{NodeJS, WebSockets, WebRTC, PeerJS, React}}{November 2020}
+          % \resumeItemListStart
+            % \resumeItem{MLH Township harnesses the power of websockets and webRTC to provide the fellows a playgournd where they can comuunicate and hang out with each other in the game-like setting of MLH Town}
+			% \resumeItem{Winner in the "Best Community Project" category for the MLH Halfway Hackthon}
+          % \resumeItemListEnd
+      % \resumeProjectHeading
+		  % {\href{https://github.com/MLH-Fellowship/CovidAid}{\underline{\textbf{CovidAid}}} $|$ \emph{Flask, NGINX, PostgreSQL, SqlAlchemy}}{October 2020}
+          % \resumeItemListStart
+            % \resumeItem{A Hackathon Project made during our first week at MLH. I was resposbile for provisioning the backend, written in Flask, writing the core APIs, documenting the APIs and deploying it using NGINX}
+          % \resumeItemListEnd
+	  % \resumeProjectHeading
 		  {\href{https://github.com/awalvie/tengi}{\underline{\textbf{tengi}}} $|$ \emph{ANSI C}}{}
 		  \resumeItemListStart
 			\resumeItem{A minimal shell written in C. The goal with the project was to learn how a UNIX shell works and communicates with process and system calls}
 		  \resumeItemListEnd
-	  \resumeProjectHeading
-		  {\href{https://github.com/awalvie/lyceum}{\underline{\textbf{lyceum}}} $|$ \emph{ANSI C}}{}
-		  \resumeItemListStart
-			\resumeItem{A Static Site Generator, written with the primary goal of being simple and protable. The project uses no external libraries and build natively on any platform. It renders Text files with metadata about the file on top into plain HTML}
-		  \resumeItemListEnd
-	  \resumeProjectHeading
+	  % \resumeProjectHeading
+		  % {\href{https://github.com/awalvie/lyceum}{\underline{\textbf{lyceum}}} $|$ \emph{ANSI C}}{}
+		  % \resumeItemListStart
+			% \resumeItem{A Static Site Generator, written with the primary goal of being simple and protable. The project uses no external libraries and build natively on any platform. It renders Text files with metadata about the file on top into plain HTML}
+		  % \resumeItemListEnd
+	  % \resumeProjectHeading
 		  {\href{https://github.com/awalvie/sersim}{\underline{\textbf{sersim}}} $|$ \emph{ANSI C}}{}
 		  \resumeItemListStart
 			\resumeItem{HTTP Server written in C to locally serve lyceum}
@@ -248,8 +237,15 @@
     \resumeSubHeadingListEnd
 
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor or Technology}{Jul. 2017 -- May 2021}
+      {Nirma University}{Ahmedabad, India}
+  \resumeSubHeadingListEnd
 
-%
+
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
