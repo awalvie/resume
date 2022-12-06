@@ -110,12 +110,13 @@ Cloudflare \\
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Setup and configure ArgoCD to achieve GitOps
+\item Setup Teleport for zero trust secure access to infrastructure
 \item Harden cluster to block network egress with kyverno
 \item Managed all infrastructure as sole member of the SRE team for a quarter
 \item POC for DeepSource Enterprise installations and support
 \item Performed zero downtime migration of DeepSource's production database
-\item Helped DeepSource achieve SOC2 compliance
-\item Migrated deepsource.io $\rightarrow$ deepsource.com
+\item Internal security tooling and practices to achieve SOC2
+% \item Migrated deepsource.io $\rightarrow$ deepsource.com
 \item Maintained CI/CD pipelines in JenkinsX, Tekton, Ceph and Spinnaker
 \item Live migrated production k8s cluster to GCP's Dataplane V2 with Velero
 \item Vault for secret management and credential rotation
@@ -123,7 +124,7 @@ Cloudflare \\
 \item Tailscale on Kubernetes as the primary internal VPN
 \item Audited, systemized and automated provisioning GCP IAM requests
 \item Cloudfront caching DeepSource's static site assests
-\item Maintained and improved DeepSource Enterprise Server
+% \item Maintained and improved DeepSource Enterprise Server
 % \item Integration Environment (TODO)
 % \item Designed a Health Check Service (TODO)
 
