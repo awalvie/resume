@@ -1,0 +1,187 @@
+\documentclass[]{deedy-resume}
+\usepackage{fancyhdr}
+\usepackage{ulem}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\rfoot{Page \thepage \hspace{1pt}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Vishesh}{Agrawal}{ \urlstyle{same}
+\href{https://awalvie.me}{awalvie.me}|
+\href{mailto:agrawal.vishesh.178@gmail.com}{agrawal.vishesh.178@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Nirma University}
+\descript{Bachelor of Technology}
+\location{Jul 2017 | Ahmedabad, IN}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TALKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{TALKS}
+	\renewcommand{\ULdepth}{1.8pt}
+	\href{https://www.youtube.com/watch?v=GFUpXhft8zA}{\uline{Building Containers from Scratch}}
+	\href{https://www.youtube.com/watch?v=oWoKy3Zjai0}{\uline{Effective Terminal Session Management}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github: \href{https://github.com/awalvie}{\bf @awalvie} \\
+LinkedIn:  \href{https://www.linkedin.com/in/vishesh-agrawal}{\bf @vishesh-agrawal} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\vspace{\topsep}
+\subsection{Programming}
+Python \textbullet{} Go \textbullet{} C
+
+\vspace{\topsep}
+\subsection{Cloud Providers}
+GCP \textbullet{} AWS
+
+\vspace{\topsep}
+\subsection{Kubernetes}
+Helm \textbullet{} Kustomize \\
+Coredns \textbullet{} Calico \textbullet{} Kyverno \\
+Cert-Manager \textbullet{} Nginx \\
+Falco \textbullet{} ArgoCD \\
+Nexus \textbullet{} Chartmuseum \\
+Spinnaker \textbullet{} Ceph \\
+% cert-manager \textbullet{} nginx \\
+% cert-manager \textbullet{} nginx \\
+
+\vspace{\topsep}
+\subsection{Tech}
+Prometheus \textbullet{} Grafana \\
+Vault \textbullet{} RabbitMQ \textbullet{} Redis \\
+Spinnaker \textbullet{} ArgoCD \textbullet{} JenkinsX \\
+Tailscale \textbullet{} InfluxDB \\
+Redis \textbullet{} RabbitMQ \\
+PostgreSQL \textbullet{} PGPool \\
+PGBouncer \textbullet{} Replicated \\
+Cloudflare \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{DeepSource (YC W20)}
+\descript{| Site Reliability Engineer II }
+\location{Jun 2021 - Present | Bangalore, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Setup and configure ArgoCD to achieve GitOps
+\item Harden cluster to block network egress with kyverno
+\item Managed all infrastructure as sole member of the SRE team for a quarter
+\item POC for DeepSource Enterprise installations and support
+\item Performed zero downtime migration of DeepSource's production database
+\item Helped DeepSource achieve SOC2 compliance
+\item Migrated deepsource.io $\rightarrow$ deepsource.com
+\item Maintained CI/CD pipelines in JenkinsX, Tekton, Ceph and Spinnaker
+\item Live migrated production k8s cluster to GCP's Dataplane V2 with Velero
+\item Vault for secret management and credential rotation
+\item Automated local dev setup of DeepSource's primary backend with Ansible
+\item Tailscale on Kubernetes as the primary internal VPN
+\item Audited, systemized and automated provisioning GCP IAM requests
+\item Cloudfront caching DeepSource's static site assests
+\item Maintained and improved DeepSource Enterprise Server
+% \item Integration Environment (TODO)
+% \item Designed a Health Check Service (TODO)
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{SendX}
+\descript{| DevOps Intern }
+\location{Jan 2021 – Jun 2021 | Remote}
+\begin{tightemize}
+\item Setup monitoring using AWS, Ansible, Prometheus, Alertmanager, Grafana.
+\item Wrote a wrapper to push metrics to Prometheus in Golang
+\item Setup logging using Loki and Promtail
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Major League Hacking}
+\descript{| Open Source Fellow }
+\location{Oct 2020 – Dec 2020 | Remote}
+\begin{tightemize}
+\item Contributed to Kiwi TCMS to increase code coverage in Django
+\item Won the Halfway Hackthon, for project \href{https://github.com/zerefwayne/mlh-township}{\uline{mlh-township}}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{\href{https://github.com/awalvie/anzibl}{anzibl}}
+\descript{| Ansible, AWS, Prometheus Alertmanager }
+\begin{tightemize}
+\item Ansible project to automate provisioning an EC2 instance, deploy a webserver, monitor it using Prometheus and trigger alerts with alertmanager
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://github.com/awalvie/go-blender}{go-blender}}
+\descript{| Go }
+\begin{tightemize}
+\item Static Site Generator for awalvie.me
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://github.com/awalvie/tengi}{tengi}}
+\descript{| C }
+\begin{tightemize}
+\item A minimal POSIX shell written in C
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://github.com/awalvie/sersim}{sersim}}
+\descript{| C }
+\begin{tightemize}
+\item HTTP Server written in C
+\end{tightemize}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
