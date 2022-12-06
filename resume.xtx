@@ -1,4 +1,4 @@
-\documentclass[]{deedy-resume}
+\documentclass[]{config}
 \usepackage{fancyhdr}
 \usepackage{ulem}
 
