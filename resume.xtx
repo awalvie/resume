@@ -110,6 +110,7 @@ Cloudflare \\
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Setup and configure ArgoCD to achieve GitOps
+\item Migrate CI from JenkinsX to GitHub Self Hosted Runners
 \item Setup Teleport for zero trust secure access to infrastructure
 \item Harden cluster to block network egress with kyverno
 \item Managed all infrastructure as sole member of the SRE team for a quarter
@@ -159,7 +160,14 @@ Cloudflare \\
 \runsubsection{\href{https://github.com/awalvie/anzibl}{anzibl}}
 \descript{| Ansible, AWS, Prometheus Alertmanager }
 \begin{tightemize}
-\item Ansible project to automate provisioning an EC2 instance, deploy a webserver, monitor it using Prometheus and trigger alerts with alertmanager
+\item Ansible provision an EC2 instance, deploy a webserver, monitor it using Prometheus and trigger alerts with alertmanager.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://github.com/awalvie/recall}{recall}}
+\descript{| Go }
+\begin{tightemize}
+\item  Send recurring emails about friends you should stay in touch with.
 \end{tightemize}
 \sectionsep
 
