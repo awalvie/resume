@@ -104,31 +104,40 @@ Cloudflare \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{DeepSource (YC W20)}
-\descript{| Site Reliability Engineer II }
-\location{Jun 2021 - Present | Bangalore, IN}
+\runsubsection{Zivid AS}
+\descript{| Software Engineer }
+\location{Sep 2023 – Present | Oslo, Norway}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Setup and configure ArgoCD to achieve GitOps
-\item Migrate CI from JenkinsX to GitHub Self Hosted Runners
-\item Setup Teleport for zero trust secure access to infrastructure
-\item Harden cluster to block network egress with kyverno
-\item Managed all infrastructure as sole member of the SRE team for a quarter
-\item POC for DeepSource Enterprise installations and support
-\item Performed zero downtime migration of DeepSource's production database
-\item Internal security tooling and practices to achieve SOC2
-% \item Migrated deepsource.io $\rightarrow$ deepsource.com
-\item Maintained CI/CD pipelines in JenkinsX, Tekton, Ceph and Spinnaker
-\item Live migrated production k8s cluster to GCP's Dataplane V2 with Velero
-\item Vault for secret management and credential rotation
-\item Automated local dev setup of DeepSource's primary backend with Ansible
-\item Tailscale on Kubernetes as the primary internal VPN
-\item Audited, systemized and automated provisioning GCP IAM requests
-\item Cloudfront caching DeepSource's static site assests
-% \item Maintained and improved DeepSource Enterprise Server
-% \item Integration Environment (TODO)
-% \item Designed a Health Check Service (TODO)
+\item End-to-end bare-metal infrastructure monitoring
+\item Manage Github Actions for CI/CD
+\item Migrate to self-hosted bare-metal k8s for running Actions Runner Controller and internal services
+\item Tech: Python, Github Actions, Bare-Metal
+\end{tightemize}
+\sectionsep
 
+\runsubsection{DeepSource (YC W20)}
+\descript{| Site Reliability Engineer II }
+\location{Jun 2021 - June 2023 | Bangalore, India}
+\begin{tightemize}
+\item Teleport over Tailscale for secure GCP Cluster Access
+\item K8s cluster maintenance, upgrades and security hardening
+\item CI with ArgoCD, GH Actions
+\item DeepSource Enterprise Server with Replicated
+\item GCP resource management and upkeep (GKE, GCR, VPC etc.)
+% \item Migrate CI from JenkinsX to GitHub Self Hosted Runners
+% \item Setup Teleport for zero trust secure access to infrastructure
+% \item Harden cluster to block network egress with kyverno
+% \item Performed zero downtime migration of DeepSource's production database
+% \item Internal security tooling and practices to achieve SOC2
+% % \item Migrated deepsource.io $\rightarrow$ deepsource.com
+% \item Maintained CI/CD pipelines in JenkinsX, Tekton, Ceph and Spinnaker
+% \item Live migrated production k8s cluster to GCP's Dataplane V2 with Velero
+% \item Vault for secret management and credential rotation
+% \item Automated local dev setup of DeepSource's primary backend with Ansible
+% \item Tailscale on Kubernetes as the primary internal VPN
+% \item Maintained and improved DeepSource Enterprise Server
+\item Tech: K8s, GCP, Tailscale, Prometheus, Vault, Teleport etc.
 \end{tightemize}
 \sectionsep
 
@@ -139,15 +148,7 @@ Cloudflare \\
 \item Setup monitoring using AWS, Ansible, Prometheus, Alertmanager, Grafana.
 \item Wrote a wrapper to push metrics to Prometheus in Golang
 \item Setup logging using Loki and Promtail
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Major League Hacking}
-\descript{| Open Source Fellow }
-\location{Oct 2020 – Dec 2020 | Remote}
-\begin{tightemize}
-\item Contributed to Kiwi TCMS to increase code coverage in Django
-\item Won the Halfway Hackthon, for project \href{https://github.com/zerefwayne/mlh-township}{\uline{mlh-township}}
+\item Tech: Prometheus, Ansible, NSQ, Go
 \end{tightemize}
 \sectionsep
 
@@ -156,13 +157,6 @@ Cloudflare \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
-
-\runsubsection{\href{https://github.com/awalvie/anzibl}{anzibl}}
-\descript{| Ansible, AWS, Prometheus Alertmanager }
-\begin{tightemize}
-\item Ansible provision an EC2 instance, deploy a webserver, monitor it using Prometheus and trigger alerts with alertmanager.
-\end{tightemize}
-\sectionsep
 
 \runsubsection{\href{https://github.com/awalvie/recall}{recall}}
 \descript{| Go }

@@ -75,8 +75,8 @@ Last Updated on
 \newcommand{\runsubsection}[1]{\color{subheadings}
 \fontspec{Inter}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
-% Descriptors command
-\newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec{Inter-Regular}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+\newcommand{\descript}[1]{
+\color{subheadings}\raggedright\scshape\fontspec{Inter-Regular}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{\color{headings}\raggedright\scshape\fontspec{Inter-Regular}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
